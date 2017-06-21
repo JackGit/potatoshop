@@ -97,4 +97,15 @@ export default class Layer {
   clone () {
 
   }
+
+  add (layer) {
+    layer.parent = this
+    this.children.push(layer)
+  }
+
+  remove (layer) {
+    // find the layer by id, name, index, or the layer object itself
+    let layer = this.children.splice(index, 1)
+    layer && (layer.parent = null)
+  }
 }
