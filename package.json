@@ -1,0 +1,33 @@
+{
+  "name": "potatoshop",
+  "version": "0.0.1",
+  "description": "potatoshop",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackgit/potatoshop.git"
+  },
+  "keywords": [
+    "potatoshop",
+    "editor",
+    "image"
+  ],
+  "author": "ygjack414@hotmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jackgit/potatoshop/issues"
+  },
+  "homepage": "https://github.com/jackgit/potatoshop#readme",
+  "devDependencies": {
+    "webpack": "^2.6.1"
+  },
+  "dependencies": {
+    "center-it": "^1.1.1"
+  }
+}
