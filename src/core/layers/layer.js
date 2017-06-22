@@ -98,14 +98,23 @@ export default class Layer {
 
   }
 
-  add (layer) {
+  /**
+   * add another layer as child of this layer
+   * @param {[type]} layer [description]
+   */
+  addChild (layer) {
+    // dettach from origin parent
+    layer.parent.removeChild(layer)
+
+    // attach to this layer
     layer.parent = this
     this.children.push(layer)
   }
 
-  remove (layer) {
+  removeChild (layer) {
     // find the layer by id, name, index, or the layer object itself
-    let layer = this.children.splice(index, 1)
-    layer && (layer.parent = null)
+    let index = this.children.indexOf(layer)
+    this.children.splice(index, 1)
+    layer.parent = null
   }
 }

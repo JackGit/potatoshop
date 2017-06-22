@@ -8,10 +8,10 @@ export default class RemoveCommand extends Command {
   }
 
   execute () {
-    this.layer.remove(this.childLayer)
+    this.layer.removeChild(this.childLayer)
   }
 
   undo () {
-    this.layer.add(this.childLayer)
+    this.layer.addChild(this.childLayer)
   }
 }

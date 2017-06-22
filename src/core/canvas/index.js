@@ -8,47 +8,18 @@
  * canvas.reorder
  */
 
+import Layer from '../layers/layer'
 import CenterIt from 'center-it'
 
-export default class Canvas {
+export default class Canvas extends Layer {
 
   constructor () {
-    this.width = 200
-    this.height = 200
-    this._pixelRatio = 2
-    this.layers = []
+    super()
+    this.isRoot = true
     this.selection = []
-  }
-
-  add () {
-
-  }
-
-  remove () {
-
   }
 
   reorder (layer, newPosition) {
 
-  }
-
-  get pixelRatio () {
-    return this._pixelRatio
-  }
-
-  set pixelRatio (ratio) {
-    this._pixelRatio = ratio
-  }
-
-  resize () {
-
-  }
-
-  clear () {
-
-  }
-
-  clone () {
-    
   }
 }

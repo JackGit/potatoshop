@@ -8,10 +8,10 @@ export default class AddCommand extends Command {
   }
 
   execute () {
-    this.layer.add(this.childLayer)
+    this.layer.addChild(this.childLayer)
   }
 
   undo () {
-    this.layer.remove(this.childLayer)
+    this.layer.removeChild(this.childLayer)
   }
 }

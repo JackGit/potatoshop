@@ -10,3 +10,10 @@ export function getBoundingRect (layers) {
 
   }
 }
+
+export function centerPoint (layer) {
+  return {
+    x: layer.position.x + layer.width / 2,
+    y: layer.position.y + layer.height / 2
+  }
+}
