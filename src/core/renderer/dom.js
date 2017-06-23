@@ -15,7 +15,7 @@ export default class DOMRenderer extends Renderer {
   }
 
   _createLayerDom (layer) {
-    let dom = document.createElement('')
+    let dom = document.createElement('z')
     this._domCache[layer.id] = dom
   }
 
