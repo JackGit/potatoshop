@@ -9,7 +9,6 @@
  */
 
 import Layer from '../layers/layer'
-import CenterIt from 'center-it'
 
 export default class Canvas extends Layer {
 
