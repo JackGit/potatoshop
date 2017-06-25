@@ -22,6 +22,7 @@ export default class Layer {
     // status
     this._locked = false
     this._selected = false
+    this._hidden = false
   }
 
   get name () {
@@ -94,8 +95,24 @@ export default class Layer {
     return this._selected
   }
 
+  hide () {
+    this._hidden = true
+  }
+
+  show () {
+    this._hidden = false
+  }
+
+  isHidden () {
+    return this._hidden
+  }
+
   clone () {
 
+  }
+
+  draw (renderer) {
+    console.warn('draw() method not implemented')
   }
 
   /**

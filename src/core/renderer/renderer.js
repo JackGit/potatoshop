@@ -21,7 +21,26 @@ export default class Renderer {
     this.domElement = dom
   }
 
+  drawImage (imageUrl) {
+
+  }
+
+  drawText () {
+
+  }
+
+  drawRect () {
+
+  }
+
+  drawCircle () {
+
+  }
+
   render (canvas) {}
 
-  resize (width, height) {}
+  resize (width, height) {
+    this._width = width
+    this._height = height
+  }
 }
