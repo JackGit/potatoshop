@@ -62,4 +62,8 @@ export default class DOMRenderer extends Renderer {
       .scale(layer.scale.x, layer.scale.y)
       .toString()
   }
+
+  drawGroup () {
+    
+  }
 }
