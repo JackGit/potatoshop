@@ -26,4 +26,20 @@ export default class Point {
     this.x = x || 0
     this.y = y || ((y !== 0) ? this.x : 0)
   }
+
+  get x () {
+    return this.x
+  }
+
+  set x (value) {
+    this.x = value
+  }
+
+  get y () {
+    return this.y
+  }
+
+  set y (value) {
+    this.y = value
+  }
 }

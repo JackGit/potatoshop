@@ -271,6 +271,7 @@ export default class Matrix {
 
   /**
    * Decomposes the matrix (x, y, scaleX, scaleY, and rotation) and sets the properties on to a transform.
+   * matrix => transform
    *
    * @param {Transform} transform - The transform to apply the properties to.
    * @return {Transform} The transform with the newly applied properties

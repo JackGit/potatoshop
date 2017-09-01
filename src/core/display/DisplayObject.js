@@ -21,6 +21,8 @@ export default class DisplayObject extends EventEmitter {
     this._zIndex = 1
   }
 
+  destroy () {}
+
   setParent (parent) {
     if (!parent || !parent.addChild) {
       throw new Error('setParent: Argument must be a Container')
@@ -29,5 +31,59 @@ export default class DisplayObject extends EventEmitter {
     parent.addChild(this)
   }
 
-  destroy () {}
+  get pivot () {
+
+  }
+
+  set pivot (value) {
+
+  }
+
+  get position () {
+    return this.transform.position
+  }
+
+  set position (value) {
+    this.transform.position = value
+  }
+
+  get rotation () {
+    return this.transform.rotation
+  }
+
+  set rotation (value) {
+    this.transform.rotation = value
+  }
+
+  get scale () {
+
+  }
+
+  set scale (value) {
+
+  }
+
+  get skew () {
+
+  }
+
+  set skew (value) {
+
+  }
+
+  get x () {
+    return this.position.x
+  }
+
+  set x (value) {
+    this.transform.position.x = value
+  }
+
+  get y () {
+    return this.position.y
+  }
+
+  set y (value) {
+    this.transform.position.y = value
+  }
 }
