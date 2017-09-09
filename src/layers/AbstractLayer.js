@@ -4,6 +4,7 @@ export default class AbstractLayer extends PIXI.Container {
     super()
     this.isLocked = false
     this.isFixedRatioScale = false
+    this.state = null
   }
 
   destroy () {}
