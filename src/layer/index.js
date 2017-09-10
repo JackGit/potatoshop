@@ -1,4 +1,4 @@
-export default class AbstractLayer extends PIXI.Container {
+export default class Layer extends PIXI.Container {
 
   constructor () {
     super()

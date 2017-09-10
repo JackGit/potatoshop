@@ -1,6 +1,6 @@
-import AbstractLayer from './AbstractLayer'
+import Layer from '../layer'
 
-export default class GroupLayer extends AbstractLayer {
+export default class GroupLayer extends Layer {
 
   constructor () {
     super()
