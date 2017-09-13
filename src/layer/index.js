@@ -5,6 +5,11 @@ export default class Layer extends PIXI.Container {
     this.isLocked = false
     this.isFixedRatioScale = false
     this.state = null
+
+    this.editorAgent
+    this.loadorAgent
+    this.selectorAgent
+    this.transformerAgent
   }
 
   destroy () {}
